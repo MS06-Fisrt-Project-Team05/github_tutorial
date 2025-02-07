@@ -7,10 +7,11 @@ class Stack:
         if not self.empty():
             return self.stack.pop()
         return -1
-    def peek(self):
+    
+    def top(self):
         if not self.empty():
             return self.stack[-1]
-        return -1
+        return False
     
     def empty(self):
         return True if len(self.stack) == 0 else False
@@ -32,7 +33,7 @@ for _ in range(N):
 
     elif command[0] == 'top':
         print(stack.top())
-        
+
     elif command[0] == 'size':
         print(stack.size())
     elif command[0] == 'empty':
