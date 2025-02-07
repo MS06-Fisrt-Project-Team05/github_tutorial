@@ -6,7 +6,7 @@ class Stack:
     def pop(self):
         if not self.empty():
             return self.stack.pop()
-        return -1
+        return False
     def top(self):
         if not self.empty():
             return self.stack[-1]
