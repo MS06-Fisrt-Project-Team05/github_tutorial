@@ -10,7 +10,7 @@ class Stack:
             return self.stack.pop()
         return -1
     
-    def top(self):
+    def peek(self):
         if not self.empty():
             return self.stack[-1]
         return -1
