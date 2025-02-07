@@ -25,10 +25,11 @@ stack = Stack()
 for _ in range(N):
     command = input().split()
     if command[0] == 'push':
-        
+
         stack.push(command[1])
     elif command[0] == 'pop':
         print(stack.pop())
+        
     elif command[0] == 'top':
         print(stack.top())
     elif command[0] == 'size':
