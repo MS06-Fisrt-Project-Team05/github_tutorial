@@ -25,6 +25,7 @@ stack = Stack()
 for _ in range(N):
     command = input().split()
     if command[0] == 'push':
+        
         stack.push(command[1])
     elif command[0] == 'pop':
         print(stack.pop())
