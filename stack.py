@@ -1,23 +1,30 @@
 class Stack:
     def __init__(self):
         self.stack = []
+
     def push(self, item):
         self.stack.append(item)
+
     def pop(self):
         if not self.empty():
             return self.stack.pop()
         return -1
+    
     def top(self):
         if not self.empty():
             return self.stack[-1]
         return -1
+    
     def empty(self):
         return True if len(self.stack) == 0 else False
+    
     def size(self):
         return len(self.stack)
     
 N = int(input())
+
 stack = Stack()
+
 for _ in range(N):
     command = input().split()
     if command[0] == 'push':
