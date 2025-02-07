@@ -13,7 +13,6 @@ class Stack:
         return -1
     def empty(self):
         return True if len(self.stack) == 0 else False
-        
     def size(self):
         return len(self.stack)
     
