@@ -11,7 +11,6 @@ class Stack:
         if not self.empty():
             return self.stack[-1]
         return -1
-        
     def empty(self):
         return True if len(self.stack) == 0 else False
         
