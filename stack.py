@@ -29,9 +29,10 @@ for _ in range(N):
         stack.push(command[1])
     elif command[0] == 'pop':
         print(stack.pop())
-        
+
     elif command[0] == 'top':
         print(stack.top())
+        
     elif command[0] == 'size':
         print(stack.size())
     elif command[0] == 'empty':
