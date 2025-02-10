@@ -5,7 +5,7 @@ class Stack:
     def push(self, item):
         self.stack.append(item)
 
-    def peek(self):
+    def pop(self):
         if not self.empty():
             return self.stack.pop()
         return False
@@ -16,7 +16,7 @@ class Stack:
         return False
     
     def empty(self):
-        return 1 if len(self.stack) == 0 else 0
+        return True if len(self.stack) == 0 else False
     
     def size(self):
         return len(self.stack)
