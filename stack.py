@@ -4,12 +4,11 @@ class Stack:
         
     def push(self, item):
         self.stack.append(item)
+    def peek(self):
 
-    def pop(self):
         if not self.empty():
             return self.stack.pop()
         return False
-    
     def top(self):
         if not self.empty():
             return self.stack[-1]
