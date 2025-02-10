@@ -4,6 +4,7 @@ class Stack:
     def push(self, item):
         self.stack.append(item)
     def peek(self):
+        
         if not self.empty():
             return self.stack.pop()
         return -1
