@@ -39,3 +39,5 @@ for _ in range(N):
         print(stack.size())
     elif command[0] == 'empty':
         print(stack.empty())
+
+# 주석추가
